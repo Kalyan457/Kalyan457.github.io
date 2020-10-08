@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalyan Kumar Kancharla</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="#home">Kalyan Kumar Kancharla</a>
+        <a href="#AboutMe">About Me</a>  
+        <a href="#WorkExperience">Work Experience</a>    
+        <a href="#Projects">Projects</a> 
+        <a href="#Hobbies">Hobbies</a>    
+        <a href="#Contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="slideshowContainer">
+        <div class="mySlides fade">
+            <div class="leftSlide">
+                <img src="kalyan.jpg" alt="pic1" class="leftImgs">
+            </div>
+            <div class="rightSlide">
+                <h1 class="text">About Me</h1>
+                <p class="contentInSlides">
+                    I'm a Masters student, my Brain's teacher, Software Developer. Excited to know about me !! Just click here.
+                </p>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="mySlides fade">
+            <div class="leftSlide">
+                <img src="workExp.jpg" alt="pic1" class="leftImgs">
+            </div>
+            <div class="rightSlide">
+                <h1 class="text">Work Experience</h1>
+                <p class="contentInSlides">
+                    I have 3 years of Professional Experience where I worked in TCS with the technologies like
+                    Java, C#, ASP.NET, JavaScript, SQL and Python. Click to know more
+                </p>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <div class="mySlides fade">
+            <div class="leftSlide">
+                <img src="projects.jpg" alt="pic1" class="leftImgs">
+            </div>
+            <div class="rightSlide">
+                <h1 class="text">Projects</h1>
+                <p class="contentInSlides">
+                    Projects include full stack web applications, legacy desktop applications and Machine Learning<br>
+                    Click to know more
+                </p>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+    <div id="AboutMe">
+        <div class="headingArrow">
+            <p class="contentArrow">About Me</p>
+        </div>
+        <hr class="hrLine">
+        <p class="contentInDivs">
+            I am currently pursuing my Masters in Computer Science in the University of Texas at Dallas.
+            After my Undergrad, I started my Professional journey by joining Tata Consultancy Services
+            as a Software Developer where I built applications based on C#, ASP.NET and Visual Basic
+            in conjunction with SQL as the database. After working for three years in TCS,
+            I want to learn new things and scale myself. So, I joined my Masters program. 
+            I am more passionate to improve my skills and learn new things.
+        </p>
+    </div>
+    <div id="WorkExperience">
+        <div class="headingArrow">
+            <p class="contentArrow">Work Experience</p>
+        </div>
+        <hr class="hrLine">
+        <p class="contentInDivs">
+            <h4 class="contentInDivs">I have three years of Professional Experience where I worked in TCS with the technologies like
+                Java,C#,ASP.NET,JavaScript,SQL,Python</h4>
+            <ul class="contentInDivs">
+                <li>Developed web applications for insurance agencies serving around 100 application users monthly</li>
+                <li>Worked with ASP.NET framework and SQL database which holds around 5000000 user data</li>
+                <li>Implemented around 10 new functionalities to an existing application without any issues</li>
+                <li>Automated recurring activities using .NET and SQL databases which saved 40 person hours monthly</li>
+                <li>Worked in AGILE, creating around 100 user stories, backlog refinements and sprint retrospective</li>
+            </ul>
+        </p>
+    </div>
+    <div id="Projects">
+        <div class="headingArrow">
+            <p class="contentArrow">Projects</p>
+        </div>
+        <hr class="hrLine">
+        <p class="contentInDivs">
+            <ul class="contentInDivs">
+                <li onclick="location.href='#project1Div'" style='cursor:pointer'>LfrmM</li>
+                <li onclick="location.href='#project2Div'" style='cursor:pointer'>Contact List Application</li>
+                <li onclick="location.href='#project3Div'" style='cursor:pointer'>Predicting IPL 2020 Winner</li>
+                <li onclick="location.href='#project4Div'" style='cursor:pointer'>Burger Builder</li>
+            </ul>
+        </p>
+    </div>
+    <div id="project1Div">
+        <h3 class="projectHeadings">LfrmM <i>(React.js, Node.js, MongoDB)</i></h3>
+        <hr class="hrLineProject">
+        <p class="contentInDivs">
+            <ul class="contentInDivs">
+                <li>Designed a web application for learners to post, view and react to the learnings.</li>
+                <li>Created the front-end in modular structure using hooks which yielded 10% increase in performance.</li>
+                <li>Reduced the calls to database by using embedded data models.</li>
+            </ul>
+        </p>
+        <div class="projectBtns">
+            <a class="contentBtns" href="https://github.com/Kalyan457/LfrmM">Source Code</a>
+        </div>
+    </div>
+    <div id="project2Div">
+        <h3 class="projectHeadings">Contact List Application <i>(ASP.NET, C#, SQL)</i></h3>
+        <hr class="hrLineProject">
+        <p class="contentInDivs">
+            <ul class="contentInDivs">
+                <li>Web application for maintaining contacts with functionalities to add/search/modify/delete a contact.</li>
+                <li>Developed the front end of the application using ASP.NET framework and used C# to build the
+                    interface for interacting with the SQL database.</li>
+                <li>Normalized the tables to reduce redundancy and maintained data integrity by enforcing constraints.</li>
+            </ul>
+        </p>
+        <div class="projectBtns">
+            <a class="contentBtns" href="videos.php#project1">Live Demo</a>
+            <a class="contentBtns" href="https://github.com/Kalyan457/ContactListApplication">Source Code</a>
+        </div>
+    </div>
+    <div id="project3Div">
+        <h3 class="projectHeadings">Predicting IPL 2020 Winner <i>(Python,Linear Regression, KNN Regression)</i></h3>
+        <hr class="hrLineProject">
+        <p class="contentInDivs">
+            <ul class="contentInDivs">
+                <li>The goal of this project is to predict the winner of IPL 2020 using data from previous editions.</li>
+                <li>Scrapped cricbuzz and ICC websites using beautiful soup and obtained required data.</li>
+                <li>Performed Exploratory Data Analysis to check the distribution of the data and detect possible outliers.</li>
+                <li>Built Linear Regression, KNN Regression models to predict the points for a team to find the winner.</li>
+            </ul>
+        </p>
+        <div class="projectBtns">
+            <a class="contentBtns" href="https://github.com/Kalyan457/Predicting-IPL-2020-Winner">Source Code</a>
+        </div>
+    </div>
+    <div id="project4Div">
+        <h3 class="projectHeadings">Burger Builder <i>(React.js, Firebase)</i></h3>
+        <hr class="hrLineProject">
+        <p class="contentInDivs">
+            <ul class="contentInDivs">
+                <li>Website built using React.js which allows users to customize the burger and place the order.</li>
+                <li>Created class based containers for handling the state and functional components for presentation.</li>
+                <li>Used firebase as the backend for storing orders and for authentication purposes.</li>
+            </ul>
+        </p>
+        <div class="projectBtns">
+            <a class="contentBtns" href="videos.php#project3">Live Demo</a>
+            <a class="contentBtns" href="https://github.com/Kalyan457/BurgerBuilder">Source Code</a>
+        </div>
+    </div>
+    <div id="SkillSet">
+        <div class="headingArrow">
+            <p class="contentArrow">SkillSet</p>
+        </div>
+        <hr class="hrLine">
+        <div id="skills">
+            <div id="FE">
+                <p id="imgfe"><img src="fe2.png" width="80px" alt="Front End Tech Image"></p>
+                <p class="skillsetClass">Front End</p>
+                <ul class="contentInDivs">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>jQuery</li>
+                    <li>React.js</li>
+                </ul>
+            </div>
+            <div id="BE">
+                <p id="imgbe"><img src="be.JPG" width="80px" alt="Back End Tech Image" ></p>
+                <p class="skillsetClass">Back End</p>
+                <ul class="contentInDivs">
+                    <li>Node.js</li>
+                    <li>ASP.NET</li>
+                </ul>
+            </div>
+            <div id="lang">
+                <p id="imgbe"><img src="cl.JPG" width="100px" alt="Computer Languages Image" ></p>
+                <p class="skillsetClass">Languages</p>
+                <ul class="contentInDivs">
+                    <li>Java</li>
+                    <li>C#</li>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>Visual Basic</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="Blogs">
+        <div class="headingArrow">
+            <p class="contentArrow">Blogs</p>
+        </div>
+        <hr class="hrLine">
+        <div id="blogsContent">
+            <div>
+                <a href="https://medium.com/@kalyankancharla457/predicting-ipl-2020-winner-5c95f6cb338c"><img src="blog1.jpeg" class="blogImgs"></a>
+            </div>
+            <div>
+                <a href="https://medium.com/analytics-vidhya/cricket-analysis-and-prediction-a7e9a7f3ebef"><img src="blog2.jpeg" class="blogImgs"></a>
+            </div>
+        </div>
+    </div>
+    <div id="Hobbies">
+        <div class="headingArrow">
+            <p class="contentArrow">Hobbies</p>
+        </div>
+        <hr class="hrLine">
+        <p class="contentInDivs">
+            <h3 class="contentInDivs">Poetry</h3>
+            <h4 class="contentInDivs">The Struggling Hearts</h4>
+            <p class="contentInDivs">
+                There are many hearts which struggle
+                <br>
+                Those hearts do not giggle
+                <br>
+                <br>
+                They live on the roads
+                <br>
+                With their bare feet on the grounds
+                <br>
+                <br>
+                No matter how the climate is insane
+                <br>
+                They are dressed with heat, cold, rain and pain
+                <br>
+                <br>
+                They need to study
+                <br>
+                They need food and shelter
+                <br>
+                Take a step forward and make them better
+                <br>
+                <br>
+                What if we are modernized…
+                <br>
+                We don’t get prized
+                <br>
+                Help them and be civilized…
+                <br>
+                <br>
+                Their problems are many
+                <br>
+                Let’s give them a penny                
+            </p>
+        </p>
+    </div>
+    <!-- <div id="ContactDiv">
+        <div class="headingArrow">
+            <p class="contentArrow">Contact</p>
+        </div>
+        <hr class="hrLine">
+        <div id="ContactContent">
+            <div id="formDiv">
+                <form action="process.php" name="ipform" method="post" onsubmit="return validate()">
+                    <p><input type="text" name="name" id="name" placeholder="Your Name"></p>
+                    <p><input type="text" name="email" id="email" placeholder="Your Email"></p>
+                    <p><input type="text" name="subject" id="subject" placeholder="Subject"></p>
+                    <p><textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea></p>
+                    <p><input type="submit" name="submit" value="Send Message" style="height: 30px;background-color: black;color: white;"></p>
+                    <br>
+                </form>
+            </div>
+            <div id="Contact">
+                <span class="contentInDivs">&#9742; 4699963409</span>
+                <br>
+                <span class="contentInDivs">&#9993; kalyankancharla457@gmail.com</span>
+                <br>       
+                <a href="https://www.linkedin.com/in/kalyan-kumar-kancharla-44386a131/" class="links"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/Kalyan457" class="links"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </div> -->
+    <div id="Contact">
+        <span class="contentInDivs">&#9742; 4699963409</span>
+        <br>
+        <span class="contentInDivs">&#9993; kalyankancharla457@gmail.com</span>
+        <br>       
+        <a href="https://www.linkedin.com/in/kalyan-kumar-kancharla-44386a131/" class="links"><i class="fa fa-linkedin"></i></a>
+        <a href="https://github.com/Kalyan457" class="links"><i class="fa fa-github"></i></a>
+    </div>
+
+<script>
+    var slideIndex = 1;
+    var myTimer;
+    var slideshowContainer;
+
+    window.addEventListener("load",function() {
+        var slides = document.getElementsByClassName("rightSlide");
+        slides[0].addEventListener("click",function(){
+            location.href="#AboutMe";
+        },true);
+        slides[1].addEventListener("click",function(){
+            location.href="#WorkExperience";
+        },true);
+        slides[2].addEventListener("click",function(){
+            location.href="#Projects";
+        },true);
+        showSlides(slideIndex);
+        myTimer = setInterval(function(){plusSlides(1)}, 4000);
+        slideshowContainer = document.getElementsByClassName('slideshowContainer')[0];
+        slideshowContainer.addEventListener('mouseover', pause)
+        slideshowContainer.addEventListener('mouseleave', resume)
+    })
+
+    function plusSlides(n){
+        clearInterval(myTimer);
+        if (n < 0){
+            showSlides(slideIndex -= 1);
+        } else {
+        showSlides(slideIndex += 1); 
+        }  
+        if (n === -1){
+            myTimer = setInterval(function(){plusSlides(n + 2)}, 4000);
+        } else {
+            myTimer = setInterval(function(){plusSlides(n + 1)}, 4000);
+        }
+    }
+
+    function showSlides(n){
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "flex";
+    }
+
+    pause = () => {
+        clearInterval(myTimer);
+    }
+
+    resume = () =>{
+        clearInterval(myTimer);
+        myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
+    }
+
+    function validate(){
+        var txtName=document.ipform.name.value;
+        var txtEmail = document.ipform.email.value;
+        var txtSubject = document.ipform.subject.value;
+        var txtMessage = document.ipform.message.value;
+
+        var expName= /^[A-Za-z ]+$/;
+        var expEmail=/\S+@\S+\.\S+/;
+        var expEmpty=/\S+/;
+
+        var resultName=expName.test(txtName);
+        var resultEmail=expEmail.test(txtEmail);
+        var resultSub = expEmpty.test(txtSubject);
+        var resultMsg = expEmpty.test(txtMessage);
+
+        if(resultName && resultEmail && resultSub && resultMsg){
+            return true;
+        }
+        else if (!resultName){
+            alert("Your Name should only contain alphabets");
+            document.ipform.name.focus();
+            return false;
+        }
+        else if(!resultEmail){
+            alert("Enter proper Email");
+            document.ipform.email.focus();
+            return false;
+        }
+        else if(!resultSub){
+            alert("Enter the Subject of the message");
+            document.ipform.subject.focus();
+            return false;
+        }
+        else if(!resultMsg){
+            alert("Enter the Message");
+            document.ipform.message.focus();
+            return false;
+        }
+    }
+
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+
+</script>    
+</body>
+</html>

@@ -1,0 +1,372 @@
+* {box-sizing: border-box}
+body{
+    margin: 0px;
+}
+
+a {
+    text-decoration: none
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+
+.slideshowContainer{
+    background-image: url("mainPic4.png");
+    height: 450px;
+    background-size: cover;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.mySlides{
+    width: 90%;
+    height: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    background-color:rgba(255, 255, 255, 0.9);
+}
+
+.leftSlide{
+    width: 30%;
+    margin-left:60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.rightSlide{
+    width:70%;
+    margin-left:30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 60px;
+    cursor: pointer;
+}
+
+.leftImgs{
+    width: 100%;
+    height: 100%;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+.next {
+    right: 5%;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover,.next:hover {
+    background-color: gray;
+}
+  
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.contentInSlides{
+    font-family: 'Lora', serif;
+}
+
+ul{
+    text-decoration: none;
+}
+
+#ContactContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#ContactContent>div{
+    width: 48%;
+}
+
+#Contact{
+    text-align: center;
+    background-color: gray;
+}
+
+#formDiv input{
+    width:100%;
+    border-radius:5px;
+    height: 30px;
+    background-color: white;
+    align-items: center;
+    margin: auto;
+}
+
+textarea{
+    width:100%;
+    border-radius:5px;
+    background-color: white;
+}
+
+#imgfe,#imgbe{
+    text-align: center;
+}
+
+label{
+    font-size: 20px;
+}
+
+.headingArrow{
+    width: 250px;
+	height: 55px;
+	background: #e87500;
+    clip-path: polygon(78% 16%, 85% 50%, 79% 78%, 0 79%, 5% 50%, 0 16%);
+}
+
+.hrLine{
+    margin-top: -0.5%;
+}
+
+#AboutMe,#WorkExperience,#Projects,#Blogs,#Hobbies,#SkillSet,#ContactDiv{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+}
+
+#skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#skills>div{
+    border: 5px solid #e87500;
+    width: 30%;
+}
+.skillsetClass{
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Lora', 'Times New Roman', Times, serif;
+}
+
+.contentArrow{
+    padding: 7%;
+    margin: 0px;
+    color: white;
+    font-family: 'Lora', sans-serif;
+}
+
+.contentInDivs{
+    font-family: 'Lora', 'Times New Roman', Times, serif;
+}
+
+#blogsContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#blogsContent>div{
+    width: 48%;
+}
+
+.blogImgs{
+    border: 5px solid #e87500;
+    width: 100%;
+    height: 450px;
+}
+
+#skills{
+    display: flex;
+    flex-direction: row;
+}
+
+/* li{
+    list-style-type: none;
+} */
+
+.links{
+    font-size: 20px;
+    color: black;
+}
+
+#project1Div,#project2Div,#project3Div,#project4Div{
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-top: 2%;
+    border: 1px solid black;
+}
+
+.projectHeadings{
+    margin-top: 6px;
+    margin-bottom: 0px;
+}
+
+.projectBtns{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-top: 1px solid gray;
+}
+.contentBtns{
+    text-decoration: none;
+    background-color: #e87500;
+    border-radius: 25px;
+    color: white;
+    padding: 5px 5px;
+}
+.contentBtns:hover{
+    background-color: #e7a868;
+}
+
+/*Media Queries*/
+@media(max-width:600px){
+    #SGBI{
+        width: 260px;
+        height: 260px;
+    }
+    .openbtn{
+        display: block;
+    }
+    #innerDiv{
+        display: none;
+    }
+    .slideshowContainer{
+        height: 455px;
+        padding-top: 15px;
+    }
+    .mySlides{
+        height: 425px;
+        flex-direction: column;
+    }
+    .leftSlide{
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+        height: 70%;
+    }
+    .rightSlide{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        cursor: pointer;
+    }
+    .text{
+        font-size: 15px;
+    }
+    
+    .prev, .next {
+        cursor: pointer;
+        position: relative;
+        top: -42%;
+        width: auto;
+        padding: 16px;
+        margin-top: -68px;
+        color: black;
+        font-weight: bold;
+        font-size: 30px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+    
+    .next {
+        right: -90%;
+        border-radius: 3px 0 0 3px;
+    }
+    .prev {
+        left: -5%;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* .prev, .next {
+        padding: 0px;
+        top: 20%;
+    } */
+    
+
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    #skills{
+        flex-direction: column;
+    }
+    #skills>div{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 4%;
+    }
+    #blogsContent{
+        flex-direction: column;
+    }
+    #blogsContent>div{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 4%;
+    }
+    #ContactContent{
+        flex-direction: column;
+    }
+    #ContactContent>div{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 4%;
+    }
+}
