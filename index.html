@@ -34,12 +34,10 @@
                     I'm a Masters student, my Brain's teacher, Software Developer. Excited to know about me !! Just click here.
                 </p>
             </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
         <div class="mySlides fade">
             <div class="leftSlide">
-                <img src="workExp.jpg" alt="pic1" class="leftImgs">
+                <img src="workExp.jpg" alt="pic2" class="leftImgs">
             </div>
             <div class="rightSlide">
                 <h1 class="text">Work Experience</h1>
@@ -48,12 +46,10 @@
                     Java, C#, ASP.NET, JavaScript, SQL and Python. Click to know more
                 </p>
             </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
         <div class="mySlides fade">
             <div class="leftSlide">
-                <img src="projects.jpg" alt="pic1" class="leftImgs">
+                <img src="projects.jpg" alt="pic3" class="leftImgs">
             </div>
             <div class="rightSlide">
                 <h1 class="text">Projects</h1>
@@ -62,9 +58,9 @@
                     Click to know more
                 </p>
             </div>
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
+        <a class="prevNew" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="nextNew" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <div id="AboutMe">
         <div class="headingArrow">
@@ -357,47 +353,48 @@
         myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
     }
 
-    function validate(){
-        var txtName=document.ipform.name.value;
-        var txtEmail = document.ipform.email.value;
-        var txtSubject = document.ipform.subject.value;
-        var txtMessage = document.ipform.message.value;
+    // function validate(){
+    //     var txtName=document.ipform.name.value;
+    //     var txtEmail = document.ipform.email.value;
+    //     var txtSubject = document.ipform.subject.value;
+    //     var txtMessage = document.ipform.message.value;
 
-        var expName= /^[A-Za-z ]+$/;
-        var expEmail=/\S+@\S+\.\S+/;
-        var expEmpty=/\S+/;
+    //     var expName= /^[A-Za-z ]+$/;
+    //     var expEmail=/\S+@\S+\.\S+/;
+    //     var expEmpty=/\S+/;
 
-        var resultName=expName.test(txtName);
-        var resultEmail=expEmail.test(txtEmail);
-        var resultSub = expEmpty.test(txtSubject);
-        var resultMsg = expEmpty.test(txtMessage);
+    //     var resultName=expName.test(txtName);
+    //     var resultEmail=expEmail.test(txtEmail);
+    //     var resultSub = expEmpty.test(txtSubject);
+    //     var resultMsg = expEmpty.test(txtMessage);
 
-        if(resultName && resultEmail && resultSub && resultMsg){
-            return true;
-        }
-        else if (!resultName){
-            alert("Your Name should only contain alphabets");
-            document.ipform.name.focus();
-            return false;
-        }
-        else if(!resultEmail){
-            alert("Enter proper Email");
-            document.ipform.email.focus();
-            return false;
-        }
-        else if(!resultSub){
-            alert("Enter the Subject of the message");
-            document.ipform.subject.focus();
-            return false;
-        }
-        else if(!resultMsg){
-            alert("Enter the Message");
-            document.ipform.message.focus();
-            return false;
-        }
-    }
+    //     if(resultName && resultEmail && resultSub && resultMsg){
+    //         return true;
+    //     }
+    //     else if (!resultName){
+    //         alert("Your Name should only contain alphabets");
+    //         document.ipform.name.focus();
+    //         return false;
+    //     }
+    //     else if(!resultEmail){
+    //         alert("Enter proper Email");
+    //         document.ipform.email.focus();
+    //         return false;
+    //     }
+    //     else if(!resultSub){
+    //         alert("Enter the Subject of the message");
+    //         document.ipform.subject.focus();
+    //         return false;
+    //     }
+    //     else if(!resultMsg){
+    //         alert("Enter the Message");
+    //         document.ipform.message.focus();
+    //         return false;
+    //     }
+    // }
 
     function myFunction() {
+
         var x = document.getElementById("myTopnav");
         if (x.className === "topnav") {
             x.className += " responsive";
