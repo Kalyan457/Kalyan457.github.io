@@ -339,7 +339,7 @@ label{
         margin-bottom: 4%;
     }
     
-    .prevNew,.nextNew{
+    /*.prevNew,.nextNew{
         cursor: pointer;
         position: relative;
         top: -86%;
@@ -360,5 +360,5 @@ label{
 
     .prevNew{
         left: 0%;
-    }
+    }*/
 }
