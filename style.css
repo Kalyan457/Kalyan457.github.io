@@ -361,4 +361,8 @@ label{
     .prevNew{
         left: 0%;
     }*/
+	
+   .prevNew,.nextNew{
+        display:none;
+    }
 }
