@@ -263,7 +263,7 @@ label{
 }
 
 /*Media Queries*/
-@media(max-width:600px){
+@media only screen and (max-width:600px){
     #SGBI{
         width: 260px;
         height: 260px;
@@ -279,7 +279,7 @@ label{
         padding-top: 15px;
     }
     .mySlides{
-        height: 425px;
+        height: 430px;
         flex-direction: column;
     }
     .leftSlide{
@@ -339,7 +339,7 @@ label{
         margin-bottom: 4%;
     }
     
-    .prevNew,.nextNew{
+    /*.prevNew,.nextNew{
         cursor: pointer;
         position: relative;
         top: -86%;
@@ -360,5 +360,9 @@ label{
 
     .prevNew{
         left: 0%;
+    }*/
+    
+   .prevNew,.nextNew{
+        display:none;
     }
 }
