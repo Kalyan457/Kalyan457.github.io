@@ -7,8 +7,7 @@
     <link rel="stylesheet" href="style.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
 </head>
 <body>
     <div class="topnav" id="myTopnav">
@@ -151,17 +150,30 @@
         </div>
     </div>
     <div id="project4Div">
-        <h3 class="projectHeadings">Burger Builder <i>(React.js, Firebase)</i></h3>
+        <h3 class="projectHeadings">Job Apply<i>(React.js, PHP, MySQL)</i></h3>
         <hr class="hrLineProject">
         <p class="contentInDivs">
             <ul class="contentInDivs">
-                <li>Website built using React.js which allows users to customize the burger and place the order.</li>
-                <li>Created class based containers for handling the state and functional components for presentation.</li>
-                <li>Used firebase as the backend for storing orders and for authentication purposes.</li>
+                <li>Website built using React.js which allows job seekers to apply for a job and update their profile.</li>
+                <li>Recruiters can post a job, view applicants for a job and update the status of the applicant.</li>
+                <li>Created class based components for handling the state and used life cycle methods.</li>
+                <li>Used PHP as the backend to interact with the database which was normalized in 3rd normal form</li>
             </ul>
         </p>
         <div class="projectBtns">
             <a class="contentBtns" href="https://github.com/Kalyan457/BurgerBuilder">Source Code</a>
+            <a class="contentBtns" onclick="videoOpen()">Live Demo</a>
+        </div>
+    </div>
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content">
+            <div class="modalContainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="modalClose">&times;</span>
+                <video class="videoClass" id="myVideo" controls>
+                <source src="FinalWPL_video.mov" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+            </div>
         </div>
     </div>
     <div id="SkillSet">
@@ -260,32 +272,6 @@
             </p>
         </p>
     </div>
-    <!-- <div id="ContactDiv">
-        <div class="headingArrow">
-            <p class="contentArrow">Contact</p>
-        </div>
-        <hr class="hrLine">
-        <div id="ContactContent">
-            <div id="formDiv">
-                <form action="process.php" name="ipform" method="post" onsubmit="return validate()">
-                    <p><input type="text" name="name" id="name" placeholder="Your Name"></p>
-                    <p><input type="text" name="email" id="email" placeholder="Your Email"></p>
-                    <p><input type="text" name="subject" id="subject" placeholder="Subject"></p>
-                    <p><textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea></p>
-                    <p><input type="submit" name="submit" value="Send Message" style="height: 30px;background-color: black;color: white;"></p>
-                    <br>
-                </form>
-            </div>
-            <div id="Contact">
-                <span class="contentInDivs">&#9742; 4699963409</span>
-                <br>
-                <span class="contentInDivs">&#9993; kalyankancharla457@gmail.com</span>
-                <br>       
-                <a href="https://www.linkedin.com/in/kalyan-kumar-kancharla-44386a131/" class="links"><i class="fa fa-linkedin"></i></a>
-                <a href="https://github.com/Kalyan457" class="links"><i class="fa fa-github"></i></a>
-            </div>
-        </div>
-    </div> -->
     <div id="Contact">
         <span class="contentInDivs">&#9742; 4699963409</span>
         <br>
@@ -352,45 +338,12 @@
         myTimer = setInterval(function(){plusSlides(slideIndex)}, 4000);
     }
 
-    // function validate(){
-    //     var txtName=document.ipform.name.value;
-    //     var txtEmail = document.ipform.email.value;
-    //     var txtSubject = document.ipform.subject.value;
-    //     var txtMessage = document.ipform.message.value;
-
-    //     var expName= /^[A-Za-z ]+$/;
-    //     var expEmail=/\S+@\S+\.\S+/;
-    //     var expEmpty=/\S+/;
-
-    //     var resultName=expName.test(txtName);
-    //     var resultEmail=expEmail.test(txtEmail);
-    //     var resultSub = expEmpty.test(txtSubject);
-    //     var resultMsg = expEmpty.test(txtMessage);
-
-    //     if(resultName && resultEmail && resultSub && resultMsg){
-    //         return true;
-    //     }
-    //     else if (!resultName){
-    //         alert("Your Name should only contain alphabets");
-    //         document.ipform.name.focus();
-    //         return false;
-    //     }
-    //     else if(!resultEmail){
-    //         alert("Enter proper Email");
-    //         document.ipform.email.focus();
-    //         return false;
-    //     }
-    //     else if(!resultSub){
-    //         alert("Enter the Subject of the message");
-    //         document.ipform.subject.focus();
-    //         return false;
-    //     }
-    //     else if(!resultMsg){
-    //         alert("Enter the Message");
-    //         document.ipform.message.focus();
-    //         return false;
-    //     }
-    // }
+    function videoOpen(){
+        var vid = document.getElementById("myVideo");
+        document.getElementById('id01').style.display='block';
+        vid.autoplay = true;
+        vid.load();
+    }
 
     function myFunction() {
 

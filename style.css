@@ -234,6 +234,7 @@ label{
     border-radius: 25px;
     color: white;
     padding: 5px 5px;
+    cursor: pointer;
 }
 .contentBtns:hover{
     background-color: #e7a868;
@@ -260,6 +261,44 @@ label{
 
 .prevNew{
     left: 1%;
+}
+
+.modalContainer{
+    width: 100%;
+    height: 100%;
+}
+
+.w3-modal{
+    z-index:3;
+    display:none;
+    padding-top:50px;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0,0,0,0.4)
+}
+.w3-modal-content{
+    margin:auto;
+    position:relative;
+    padding:0;
+    outline:0;
+    width:1000px;
+    height: auto;
+    background-color: #ddd;
+}
+.modalClose{
+    font-size: 24px;
+    float: right;
+    font-weight: bold;
+    cursor: pointer;
+}
+.videoClass{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
 }
 
 /*Media Queries*/
@@ -364,5 +403,8 @@ label{
     
    .prevNew,.nextNew{
         display:none;
+    }
+    .w3-modal-content{
+        width: 400px;
     }
 }
