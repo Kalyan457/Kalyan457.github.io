@@ -15,7 +15,8 @@
         <a href="#home">Kalyan Kumar Kancharla</a>
         <a href="#AboutMe">About Me</a>  
         <a href="#WorkExperience">Work Experience</a>    
-        <a href="#Projects">Projects</a> 
+        <a href="#Projects">Projects</a>
+        <a href="#Awards">Awards</a>
         <a href="#Hobbies">Hobbies</a>    
         <a href="#Contact">Contact</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -26,12 +27,27 @@
     <div class="slideshowContainer">
         <div class="mySlides fade">
             <div class="leftSlide">
-                <img src="kalyan.jpg" alt="pic1" class="leftImgs">
+                <img src="kalyan.jpg" alt="profilePic" class="leftImgs">
             </div>
             <div class="rightSlide">
                 <h1 class="text">About Me</h1>
                 <p class="contentInSlides">
-                    I'm a Masters student and a passionate Software Developer. Excited to know about me !! Just click here.
+                    Hi there! I'm Kalyan. I have been working as Software Development Engineer at Amazon for the past 2.5 years
+                    contributing to development of Alexa Profiles.
+                </p>
+                <p class="contentInSlides">
+                    While at Amazon, apart from regular development work, I am an active contributor to internal Stackoverflow at Amazon, which gained me bronze leaf.
+                    I also participated in Hackathon where I was awarded 2nd Prize and I received Quarterly Award for my design and development.
+                </p>
+                <p class="contentInSlides">
+                    Prior to that, I worked at TCS as a System Engineer for 3 years.
+                </p>
+                <p class="contentInSlides">
+                    I did my Masters in Computer Science from the University of Texas at Dallas, where my course work includes Machine Learning,
+                    Natural Language Processing, Data Structures and Algorithms and many others.
+                </p>
+                <p class="contentInSlides">
+                    Excited to know more about me !! Just click here.
                 </p>
             </div>
         </div>
@@ -42,7 +58,8 @@
             <div class="rightSlide">
                 <h1 class="text">Work Experience</h1>
                 <p class="contentInSlides">
-                    I have worked in TCS for 3 years with the technologies like Java, C#, ASP.NET,SQL. Click to know more
+                    Currently working as Software Development Engineer at Amazon, building software products for Alexa using AWS services.
+                    Prior to that, I have worked in TCS for 3 years with technologies like Java, C#, ASP.NET,SQL. Click to know more
                 </p>
             </div>
         </div>
@@ -67,12 +84,25 @@
         </div>
         <hr class="hrLine">
         <p class="contentInDivs">
-            I am currently pursuing my Masters in Computer Science in the University of Texas at Dallas.
+            I am currently working as Software Development Engineer at Amazon in Alexa organization for the past 2.5 years.
+            My work involved designing and implementing backend APIs including Batch APIs along with partial read.
+        </p>
+        <p class="contentInDivs">
+            I have deprecated a customer facing service and consolidating its functionality into a central service by building parity APIs.
+        </p>
+        <p class="contentInDivs">
+            I worked with many AWS products like, Lambda, SNS, SQS, DynamoDB, EventBridge, S3, CloudFormation, CloudWatch, Glue, CodeDeploy, CodePipeline any many others.
+        </p>
+        <p class="contentInDivs">
+            I pursued my Masters in Computer Science from the University of Texas at Dallas, where my course work included, Machine Learning, Natural Language Processing, Data Structures and Algorithms etc..
+        </p>
+        <p class="contentInDivs">
             After my Undergrad, I started my Professional journey by joining Tata Consultancy Services
             as a Software Developer where I built applications based on C#, ASP.NET and Visual Basic
-            in conjunction with SQL as the database. After working for three years in TCS,
-            I want to learn new things and scale myself. So, I joined my Masters program. 
-            I am more passionate to improve my skills and learn new things.
+            in conjunction with SQL as the database.
+        </p>
+        <p class="contentInDivs">
+            I am more passionate to learn new things, diving deep into problems and finding solutions.
         </p>
     </div>
     <div id="WorkExperience">
@@ -81,24 +111,48 @@
         </div>
         <hr class="hrLine">
         <p class="contentInDivs">
-            <h4 class="contentInDivs">I have three years of Professional Experience where I worked in TCS with the technologies like
-                Java,C#,ASP.NET,JavaScript,SQL,Python</h4>
-            <h4>Systems Engineer</h4>
+        <h3 class="contentInDivs">Amazon | Seattle, USA| July 2021-Present </h3>
+            <h4>Software Development Engineer - I</h4>
                 <ul class="contentInDivs">
-                    <li>Converted the salesdesk application in VB6 to a web application using React.js, .NET Core and SQL.</li>
-                    <li>This holds the sales data of around 0.3 million agents and serving around 100 application users.</li>
-                    <li>Worked in AGILE creating around 100 user stories, backlog refinements and sprint retrospective.</li>
+                    <li>Designed and implemented RESTful Batch API along with Partial read using Amazon API Gateway with Lambda proxy integration, CompletableFutures with timeouts to deliver dynamic recommendations in ranked order on Profile Page of Alexa devices and Alexa App.</li>
+                    <li>Designed and implemented event-driven triggers incorporating with delayed request processing to
+                        deliver push notifications on Alexa App upon user log-in. Leveraged SNS, SQS and EventBridge
+                        which delivers 2000 notifications per second resulting in improvement of CTR by 15%.</li>
+                    <li>Deprecated a customer facing service and consolidated its functionality into a centralized service.
+                        Created parity APIs to ensure seamless transition, which reduced the operational costs by around 30%.</li>
+                    <li>
+                        Introduced a trigger gateway module which converts events of diverse formats into well-defined
+                        requests using rule matching expressions and JOLT transformer specs. This module is being used by
+                        20 different events.
+                    </li>
+                    <li>
+                        Utilized AWS Cloud Development Kit (CDK) to create CloudFormation stacks and built utility
+                        methods to create AWS resources. These utility methods are then used to create around 50 alarms, 4
+                        DynamoDB tables, 7 Evidently features.
+                    </li>
+                    <li>
+                        Reduced code deployment time by 1hour by using pub-sub mechanism to assert on messages received
+                        instead of relying on CloudWatch logs.
+                    </li>
+                    <li>
+                        Achieved a 30% reduction in service costs, by aggregating CloudWatch alarms, removing unwanted
+                        logs, optimizing provisioned concurrency, reducing memory allocated.
+                    </li>
+                    <li>
+                        Mentored an intern by providing feedback on design documents, conducting code reviews and
+                        providing clarifications. This helped the intern in securing a full time offer. Additionally, appointed as
+                        a mentor for a new hire and guided him to deliver distributed cache solution using DynamoDB.
+                    </li>
                 </ul>
-            <h4>Assitant Systems Engineer</h4>
-                <ul class="contentInDivs">
-                    <li>Developed the internal metrics dashboard for monitoring tickets using HTML, CSS and JavaScript.</li>
-                    <li>Automated daily, weekly and monthly reports using .NET and SQL saving 40 person hours monthly.</li>
-                </ul>
-            <h4>Assitant Systems Engineer Trainee</h4>
-                <ul class="contentInDivs">
-                    <li>Built a web application using ASP.NET, C#, SQL for maintaining contacts with functionalities to
-                        add/search/modify/delete a contact.</li>
-                </ul>
+        </p>
+        <p class="contentInDivs">
+            <h3 class="contentInDivs">TATA Consultancy Services (TCS) | Hyderabad, India| July 2016-July 2019 </h3>
+                <h4>Systems Engineer</h4>
+                    <ul class="contentInDivs">
+                        <li>Converted VB6 based desktop application to a web application using React.js, Java and SQL.</li>
+                        <li>Developed the internal metrics dashboard for monitoring tickets using JavaScript and D3.js.</li>
+                        <li>Automated daily, weekly and monthly reports using .NET and SQL saving 40 person hours monthly.</li>
+                    </ul>
         </p>
     </div>
     <div id="Projects">
@@ -222,6 +276,32 @@
                     <li>SQL</li>
                     <li>Visual Basic</li>
                 </ul>
+            </div>
+            <div id="lang">
+                <p id="imgbe"><img src="cl.jpg" width="100px" alt="Tools and Technologies Image" ></p>
+                <p class="skillsetClass">Tools and Technologies</p>
+                <ul class="contentInDivs">
+                    <li>AWS</li>
+                    <li>Docker</li>
+                    <li>Git</li>
+                    <li>MySQL</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="Awards">
+        <div class="headingArrow">
+            <p class="contentArrow">Awards</p>
+        </div>
+        <hr class="hrLine">
+        <div class="awards">
+            <div>
+                <i>Quarterly Award at Alexa Identity and Personality</i>
+                <img src="quarterlyAward.jpg" class="awardImgs">
+            </div>
+            <div>
+                <i>Hackathon Winner at Alexa Identity and Personality</i>
+                <img src="hackathon.png" class="awardImgs">
             </div>
         </div>
     </div>

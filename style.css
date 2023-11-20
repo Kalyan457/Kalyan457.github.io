@@ -168,7 +168,7 @@ label{
     margin-top: -0.5%;
 }
 
-#AboutMe,#WorkExperience,#Projects,#Blogs,#Hobbies,#SkillSet,#ContactDiv,#Certifications{
+#AboutMe,#WorkExperience,#Projects,#Blogs,#Hobbies,#SkillSet,#ContactDiv,#Certifications,#Awards{
     margin-left: 10%;
     margin-right: 10%;
     margin-top: 2%;
@@ -181,7 +181,7 @@ label{
 }
 #skills>div{
     border: 5px solid #e87500;
-    width: 30%;
+    width: 22%;
 }
 .skillsetClass{
     font-weight: bold;
@@ -208,9 +208,23 @@ label{
 #blogsContent>div{
     width: 48%;
 }
+.awards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.awards>div{
+    width: 48%;
+    border: 5px solid #e87500;
+}
 
 .blogImgs{
     border: 5px solid #e87500;
+    width: 100%;
+    height: 450px;
+}
+
+.awardImgs{
     width: 100%;
     height: 450px;
 }
@@ -341,7 +355,7 @@ label{
 }
 
 /*Media Queries*/
-@media only screen and (max-width:600px){
+@media only screen and (max-width:900px){
     #SGBI{
         width: 260px;
         height: 260px;
@@ -353,15 +367,15 @@ label{
         display: none;
     }
     .slideshowContainer{
-        height: 455px;
-        padding-top: 15px;
+        height: 1250px;
+        padding-top: 35px;
     }
     .slideshowContainerCert{
         height: 260px;
         padding-top: 15px;
     }
     .mySlides{
-        height: 430px;
+        height: 1150px;
         flex-direction: column;
     }
     .mySlidesCert{
